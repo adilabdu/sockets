@@ -1,0 +1,30 @@
+* {
+	font-family: 'Roboto Mono', monospace;
+	background-color: pink;
+}
+
+.font {
+	font-weight: 400;
+}
+
+.light-font {
+	font-weight: 200;
+}
+
+.bold-font {
+	font-weight: 700;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+.light-mode {
+	background-color: white;
+	color: black;
+}
+
+.glow {
+	box-shadow: 0 0 40px 20px white;
+}

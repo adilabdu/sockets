@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #111;
+}
+
+.wrapper {
+	width: 450px;
+	height: 500px;
+	position: relative;
+}
+
+img {
+	margin-top: -50px;
+	height: 450px;
+	width: 100%;
+	position: absolute;
+}
+
+img#bulb-on {
+	opacity: 0;
+	animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+	0% {
+		opacity: 1;
+	}
+	5% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	74% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	84% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}

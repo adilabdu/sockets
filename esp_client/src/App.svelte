@@ -1,11 +1,18 @@
 <script>
 
+  import { io } from 'socket.io-client';
+	const socket = io("http://localhost:3000")
+
+  socket.on("connect", () => {
+    console.log('ESP module connection successful!')
+  })
+
   let flip = false
 
-  function switchFlip() {
-    flip = !flip
-    console.log(flip)
-  }
+  socket.on('switch_bulb', (arg) => {
+    console.log(arg)
+    flip = arg
+  })
 
 </script>
 

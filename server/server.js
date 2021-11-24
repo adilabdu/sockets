@@ -1,5 +1,6 @@
 const io = require("socket.io")(3000, {
     cors: {
+        // Make sure port numbers are correctly assigned
         origin: ["http://localhost:5000", "http://localhost:58160"],
     },
 })
